@@ -10,7 +10,7 @@ def extract_linked_page_text(base_url, link_url):
         soup = BeautifulSoup(response.text, "html.parser")
 
         text_content = soup.get_text(separator="\n", strip=True)
-        return text_contentgit
+        return text_content
     else:
         print(f"Failed to fetch content from: {full_url}")
         return None
